@@ -33,7 +33,7 @@ def main():
     global dataframe
 #     if uploaded_file:
     df = pd.read_excel('output.xlsx')
-    news_articles = df
+    data_kmeans = df
 
     result = ""
     
