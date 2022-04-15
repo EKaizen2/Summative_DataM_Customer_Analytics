@@ -41,43 +41,43 @@ def main():
     if st.button("Recommend"):
       soda_list = {'COKE':100, 'FANTA':60, 'SPRITE':40}
       def soda_recommenders(customer_id):
-        id = int(customer_id)
-        clus = int(data_kmeans.iloc[id,8])
-        if clus == 0:
-#           print('The customer falls under the cluster WELL OFF\n')
-          return 100
-#           for key, value in soda_list.items():
-#             if value == 100:
-#               print('Soda Recommended for this customer is:\n')
-#               print(str(key)+'\nPrice: '+str(value))
-        elif clus == 1:
-          return 60
-#           print('The customer falls under the cluster GOOD LIVING\n')
-#           for key, value in soda_list.items():
-#             if value == 60:
-#               print('Soda Recommended for this customer is:\n')
-#               print(str(key)+'\nPrice: '+str(value))
-        else:
-          return 40
-#           print('The customer falls under the cluster STANDARD LIVING\n')
-#           for key, value in soda_list.items():
-#             if value == 40:
-#               print('Soda Recommended for this customer is:\n')
-#               print(str(key)+'\nPrice: '+str(value))
+          id = int(customer_id)
+          clus = int(data_kmeans.iloc[id,8])
+          if clus == 0:
+            st.write('The customer falls under the cluster WELL OFF\n')
+            for key, value in soda_list.items():
+              if value == 100:
+                st.write('Soda Recommended for this customer is:\n')
+                st.write(str(key)+'\nPrice: '+str(value))
+          elif clus == 1:
+            st.write('The customer falls under the cluster GOOD LIVING\n')
+            for key, value in soda_list.items():
+              if value == 60:
+                st.write('Soda Recommended for this customer is:\n')
+                st.write(str(key)+'\nPrice: '+str(value))
+          else:
+            st.write('The customer falls under the cluster STANDARD LIVING\n')
+            for key, value in soda_list.items():
+              if value == 40:
+                st.write('Soda Recommended for this customer is:\n')
+                st.write(str(key)+'\nPrice: '+str(value))
       result = soda_recommenders(customer_id)
-      for key, value in soda_list.items():
-            if value == 100 and result == 100:
-                st.write('The customer falls under the cluster WELL OFF\n')
-                st.write('Soda Recommended for this customer is:\n')
-                st.write(str(key)+'\nPrice: '+str(value))
-            elif value == 60 and result == 60:
-                st.write('The customer falls under the cluster GOOD LIVING\n')
-                st.write('Soda Recommended for this customer is:\n')
-                st.write(str(key)+'\nPrice: '+str(value))
-            else:
-                st.write('The customer falls under the cluster STANDARD LIVING\n')
-                st.write('Soda Recommended for this customer is:\n')
-                st.write(str(key)+'\nPrice: '+str(value))
-#       st.write(result)
+#       for key, value in soda_list.items():
+#             if value == 100 and result == 100:
+#                 st.write('The customer falls under the cluster WELL OFF\n')
+#                 st.write('Soda Recommended for this customer is:\n')
+#                 if value == 100:
+#                     st.write(str(key)+'\nPrice: '+str(value))
+#             elif value == 60 and result == 60:
+#                 st.write('The customer falls under the cluster GOOD LIVING\n')
+#                 st.write('Soda Recommended for this customer is:\n')
+#                 if value == 100:
+#                     st.write(str(key)+'\nPrice: '+str(value))
+#             else:
+#                 st.write('The customer falls under the cluster STANDARD LIVING\n')
+#                 st.write('Soda Recommended for this customer is:\n')
+                
+#                 st.write(str(key)+'\nPrice: '+str(value))
+      st.write(result)
 if __name__ == '__main__':
     main()
