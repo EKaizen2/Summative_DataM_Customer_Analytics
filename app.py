@@ -22,11 +22,11 @@ def main():
     <h1 style ="color:white;text-align:center;">Ephraim Adongo Customer Analytics</h1>
     </div>
     
-    <div style ="background-color:#ADD8E6;padding:20px;font-weight:15px">
-    <h2 style ="color:white;text-align:center;"> This is a Soda Recommender system for Ephraim's Store</h2> 
-    <h2 style ="color:white;text-align:center;"> It recommends the right type of soda to customers based on their Standard of living</h2>
-    <h3 style ="color:white;text-align:center;">Enter customer ID to get soda recommedation</h3>
-    <h3 style ="color:white;text-align:center;">'ID must be from 0 to 500: >>>> </h3> 
+    <div style ="background-color:#ADD8E6;padding:10px;font-weight:15px">
+    <h2 style ="color:black;text-align:center;"> This is a Soda Recommender system for Ephraim's Store</h2> 
+    <h2 style ="color:black;text-align:center;"> It recommends the right type of soda to customers based on their Standard of living</h2>
+    <h3 style ="color:black;text-align:center;">Enter customer ID to get soda recommedation</h3>
+    <h3 style ="color:black;text-align:center;">'ID must be from 0 to 500: >>>> </h3> 
     </div> 
     """
 
