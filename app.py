@@ -18,10 +18,15 @@ import pandas as pd
 def main():
     # front end elements of the web page
     html_temp = """ 
-    <div style ="background-color:#002E6D;padding:20px;font-weight:15px"> 
-    <h1 style ="color:white;text-align:center;">Ephraim Adongo Customer Analytics</h1> 
-    <h3 style ="color:white;text-align:center;">Enter the ID of the customer you want to know which soda to recommed to him/her\n' 
-'Index must be from 0 to 500: >>>> </h3> 
+    <div style ="background-color:#002E6D;padding:20px;font-weight:15px">
+    <h1 style ="color:white;text-align:center;">Ephraim Adongo Customer Analytics</h1>
+    </div>
+    
+    <div style ="background-color:#ADD8E6;padding:20px;font-weight:15px">
+    <h2 style ="color:white;text-align:center;"> This is a Soda Recommender system for Ephraim's Store\n
+    It recommends the right type of soda to customers based on their Standard of living</h2>
+    <h3 style ="color:white;text-align:center;">Enter customer ID to get soda recommedation\n' 
+    'ID must be from 0 to 500: >>>> </h3> 
     </div> 
     """
 
