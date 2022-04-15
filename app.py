@@ -20,6 +20,8 @@ def main():
     html_temp = """ 
     <div style ="background-color:#002E6D;padding:20px;font-weight:15px"> 
     <h1 style ="color:white;text-align:center;">Ephraim Adongo Customer Analytics</h1> 
+    <h3 style ="color:white;text-align:center;">Enter the ID of the customer you want to know which soda to recommed to him/her\n' 
+'Index must be from 0 to 500: >>>> </h3> 
     </div> 
     """
 
@@ -27,8 +29,7 @@ def main():
     st.markdown(html_temp, unsafe_allow_html=True)
     default_value_goes_here = ""
     
-    customer_id = int(st.number_input('Enter the ID of the customer you want to know which soda to recommed to him/her\n' 
-'Index must be from 0 to 500: >>>> '))
+    customer_id = int(st.number_input(''))
     
     
     global dataframe
